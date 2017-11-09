@@ -14,13 +14,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static junit.framework.TestCase.assertTrue;
 
+/**
+ * A class with a couple of Selenium
+ * WebDriver tests.
+ */
 public class MyFirstChromeTest {
+    /**
+     * Assign the location of the
+     * executable "chromedriver" to
+     * a String variable
+     */
     @BeforeClass
     public static void setupChromeDriverLocation() {
         String chromeDriverLocation = "C:/Drivers_automation/ChromeDriver/chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", chromeDriverLocation);
     }
 
+    /**
+     * A test that opens Chrome and
+     * is guaranteed to pass
+     */
     @Test
     public void basicChromeUsage() {
         WebDriver chrome = new ChromeDriver();
@@ -29,6 +42,10 @@ public class MyFirstChromeTest {
         chrome.quit();
     }
 
+    /**
+     * A test that opens Chrome and
+     * is rigged to fail
+     */
     @Test
     public void basicChromeUsageFailure() {
         WebDriver chrome = new ChromeDriver();
