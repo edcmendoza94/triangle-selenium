@@ -1,2 +1,0 @@
-1. Project created
-2. Added dependency from http://www.seleniumhq.org/docs/03_webdriver.jsp#setting-up-a-selenium-webdriver-project to project's pom.xml file
